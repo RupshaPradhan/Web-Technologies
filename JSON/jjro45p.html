@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+
+
+<HTML>
+    <head>
+        <script>
+                function viewJSON(what) 
+                {
+                    console.log("IN VIEWJSON");
+                    var URL = what.URL.value;
+                    if(URL =="")
+                    {
+                        alert('Please enter a JSON file name in the textbox!It cannot be left empty!');
+                        return;
+                    }
+                    function loadJSON(url) 
+                    {
+                        xmlhttp=new XMLHttpRequest();
+                        xmlhttp.open("GET",url,false); // "synchronous” (deprecated because it freezes the page while waiting for a response) *
+                        xmlhttp.send();
+                        jsonObj= JSON.parse(xmlhttp.responseText);
+                        return jsonObj;
+                    }
+                    try{
+                        jsonObj = loadJSON(URL);
+                        if(!(jsonObj.Mainline.Table).hasOwnProperty('Row'))
+                        {
+                            alert('Input JSON file cotains 0 car manufacturers');
+                            return;
+                        }
+                        jsonObj.onload=generateHTML(jsonObj);
+                        hWin = window.open("", "Assignment4", "height=800,width=1400");
+                        hWin.document.write(html_text);
+                        hWin.document.close();
+                    }catch(exception){
+                        alert('JSON file not found!');
+                    }
+                    
+                }
+
+                function generateHTML(jsonObj)  
+                {
+                    
+                    root=jsonObj.DocumentElement; 
+                    html_text="<html><head><title>Largest Manufactureres by Production(2017)</title></head><body>";
+                    html_text+="<table border='2'>"; 
+                    headers=jsonObj.Mainline.Table.Header.Data;
+                    html_text+="<tbody>"; 
+                    html_text+="<tr>"; 
+                    x=0;  y=0;
+	    
+                    // output the headers
+                    for(i=0;i<headers.length;i++) 
+                        {                  		       
+		                    html_text+="<th><b>"+headers[i]+"</b></th>";    			
+	                    } 
+
+                        html_text+="</tr>"; 
+                    
+                    // output out the values
+                    
+                    vehicles=jsonObj.Mainline.Table.Row;
+                    y=160; 
+                    for(i=0;i<vehicles.length;i++) 
+                        {                 
+		                    vehicle=vehicles[i]; 
+	                        html_text+="<tr>";      
+                            var vehicle_keys = Object.keys(vehicle);
+                            for(j=0;j<vehicle_keys.length;j++) 
+	                            {     
+                                    if(vehicle_keys[j]=="Rank")  {
+                                        x=60;  
+                                        if(vehicle['Rank']=="")
+                                            val="";
+                                        else 
+                                            val= vehicle['Rank'];
+                                        html_text+="<td width="+x+" height="+y+">"+ val +"</td>"; 
+                                    }else if(vehicle_keys[j]=="Group")  {
+                                        x=85;  
+                                        if(vehicle['Group']=="")
+                                            val="";
+                                        else 
+                                            val= vehicle['Group'];
+                                        html_text+="<td width="+x+" height="+y+">"+  val+"</td>"; 
+                                    }else if(vehicle_keys[j]=="Hubs")  {
+                                        x=1150;  
+                                        if(vehicle['Hubs']['Hub'].length>0)
+                                        {
+                                            html_text+="<td width="+x+" height="+y+"><ul><li><b>"+ vehicle['Hubs']['Hub'][0]+"</b></li>";
+                                            for(k=1;k<vehicle['Hubs']['Hub'].length;k++)
+                                              html_text+="<li>"+vehicle['Hubs']['Hub'][k]+"</li></ul>";
+                                            html_text+="</td>";
+                                        }
+                                        else 
+                                        {
+                                            val="";
+                                            html_text+="<td width="+x+" height="+y+">"+  val+"</td>"; 
+                                        }
+                                    } else if(vehicle_keys[j]=="Vehicles")  {
+                                        x=120;  
+                                        if(vehicle['Vehicles']=="")
+                                            val="";
+                                        else 
+                                            val= vehicle['Vehicles'];
+
+                                        html_text+="<td width="+x+" height="+y+">"+  val +"</td>"; 
+                                    } else if(vehicle_keys[j]=="HomePage") {
+                                        x=330;
+                                        if(vehicle['HomePage']=="")
+                                            val="";
+                                        else 
+                                            val= vehicle['HomePage'];
+                                        
+                                        html_text+="<td width="+x+" height="+y+"><a href='"+val+"'>"+val+"</a></td>";	
+                                    }  else {
+                                        x=170;
+                                        if(vehicle['Logo']=="")
+                                            val="";
+                                        else 
+                                            val= vehicle['Logo'];
+                                        
+                                        html_text+="<td><img src='"+ val +"' width='"+x+"' height='"+y+"'></td>"; 
+                                    } 
+                                    	   		        
+	                            } 		     	           
+	                        html_text+="</tr>";            
+                        }                            
+                    
+                    html_text+="</tbody>"; 
+                    html_text+="</table>";           
+                    html_text+="</bo"+"dy>"+"</html>";
+                }
+  
+                         
+        </script>
+    </head>
+
+    <body style="position:absolute; TOP:200px;left:370px">
+            <h1 style="text-align:center;font-size: 25px;">Enter URL for largest manufacturers by production (2017) List JSON File</h1>
+            <form  style="text-align:center" name="myform" method="POST" id="location">
+                <input style="border-color:rgb(108, 174, 218);" type="text" name="URL" maxlength="255" size="25"/>
+                <br><br>
+                <input style="text-align:center; border-radius:5px;" type="button" name="submit" value="Submit Query" onClick="viewJSON(this.form)" />
+            </form>
+        </body>
+</HTML>
+
+
