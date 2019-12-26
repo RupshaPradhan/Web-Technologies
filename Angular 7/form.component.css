@@ -1,0 +1,194 @@
+.form-group.required .control-label:after {
+  content:"*";
+  color:red;
+}
+.errorContainer{
+  background-color:	khaki;
+
+}
+.showErrorMessage{
+  color:#cca222;
+  text-align: left;
+  padding-left:1%;
+
+}
+
+
+.st{
+
+
+}
+.label
+{
+  margin-left: 3em;
+}
+
+.errorStyle{
+  color:red;
+}
+
+.optStyle{
+  width:45%;
+  height:125%;
+  border-radius: 3px;
+}
+
+.act{
+  background-color:#306f8f ;
+  color:white;
+  padding:3px 30px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer!important;
+  border-radius: 0.25rem;
+}
+
+.inact{
+  background-color: white;
+  color:gray;
+  padding:3px 30px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.25rem;
+}
+
+.fav{
+  width:inherit;
+  height:80%;
+  background-color:	khaki;
+  box-shadow:0px 0px 0px 0px white;
+  margin-top:4%;
+}
+
+.err{
+  color: #cca222;
+  padding-top:1%;
+  float:left;
+  margin-left: 5%;
+}
+
+.container2{
+  margin-top:3.5%;
+
+}
+
+
+
+.center-block
+{
+  background-color:#306f8f;
+  margin-top:5%;
+  padding-top:2%;
+  box-shadow: 6px 6px 6px 0px 	#808080;
+  color:white;
+  border-radius:5px;
+}
+
+.displaySection{
+  color:black;
+  margin-top: 5%;
+}
+
+.sButton
+{
+  padding:3.5px 28px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white!important;
+  cursor: pointer!important;
+}
+
+.clrButton{
+  padding:3px 30px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white!important;
+  cursor: pointer!important;
+}
+
+.sButtonDisabled
+{
+  padding:3px 33px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #ccd8e1;
+  cursor:initial;
+
+}
+
+
+.flex-container1{
+  float:left;
+   margin-left:9%;
+}
+
+.flex-container2{
+  float:left;
+  margin-left:2.4%;
+}
+
+.progress{
+  margin-top:5%;
+
+}
+
+
+.flex-container3{
+  float:left;
+   margin-left:76%;
+}
+
+.flex-container4{
+  float:left;
+  margin-left:0%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .container2{
+    margin-top:10.5%;
+
+  }
+
+  .optStyle{
+    width:100%;
+    height:143%;
+    border-radius: 3px;
+  }
+
+
+  .label{
+    margin-left: 0em;
+  }
+
+  .container{
+    margin-top:-18px;
+    width:93%
+  }
+
+  .flex-container3{
+    float:left;
+     margin-left:27%;
+  }
+
+  .flex-container1{
+    float:left;
+     margin-left:6%;
+  }
+
+  .fav{
+    width:118%;
+    height:37px;
+    margin-top: 37%;
+    background-color:	khaki;
+    box-shadow:0px 0px 0px 0px white;
+    margin-left: -9%;
+    border-radius: 0px;
+  }
+}

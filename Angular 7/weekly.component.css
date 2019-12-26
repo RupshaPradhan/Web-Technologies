@@ -1,0 +1,144 @@
+.modal-header{
+  background-color:#306f8f ;
+}
+
+.modal-body{
+  background-color:#99CCEB;
+}
+
+.widthDef{
+  width:100%;
+
+}
+
+.widthClosed{
+  /* height:0.1px;
+  width:0.1px; */
+  display: none;
+}
+
+#myWeeklyChart{
+  margin-left: -4%;
+  margin-top:8%;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.lft{
+  padding-left:26px;
+}
+
+.lftBtm{
+  font-weight: 450;
+  font-size: 18px;
+}
+
+.imgWeekly{
+  width:134px;
+  height:135px;
+  padding-top: 30px;
+  padding-left:20px;
+}
+
+.weeklyTopPaddingCity{
+  padding-top:6px;
+  font-weight: 450;
+  font-size: 25px;
+}
+
+.weeklyTopPaddingTemp{
+  padding-top:6px;
+  font-weight: 550;
+  font-size: 32px;
+
+}
+
+.weeklyTopPaddingSumm{
+  padding-top:10px;
+  font-size: 20px;
+  font-weight: 450;
+}
+
+.row1{
+  padding-left:5px;
+}
+
+.deg{
+  float:left;
+  width:18px;
+  padding-left:0px;
+  padding-right:6px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .modal-content{
+    width:98%;
+    margin-left:4px;
+  }
+
+  .widthDef{
+    width:98%;
+  }
+
+  .widthClosed{
+    width:0.1%;
+  }
+
+  .lft{
+    padding-left:26px;
+  }
+
+  .lftBtm{
+    padding-left:14px;
+  }
+
+  .imgWeekly{
+    width:95px;
+    height:104px;
+    padding-top: 30px;
+  }
+
+  .weeklyTopPaddingCity{
+    padding-top:6px;
+    font-weight: 450;
+    font-size: 20px;
+  }
+
+  .weeklyTopPaddingTemp{
+    padding-top:6px;
+    font-weight: 600;
+    font-size: 23px;
+
+  }
+
+  .weeklyTopPaddingSumm{
+    padding-top:6px;
+    font-weight: 450;
+    font-size: 15px;
+  }
+
+  .row1{
+    padding-left:5px;
+  }
+
+  .deg{
+    float:left;
+    width:18px;
+    padding-left:0px;
+    padding-right:6px;
+  }
+
+
+  hr {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}

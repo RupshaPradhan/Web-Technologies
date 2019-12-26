@@ -1,0 +1,86 @@
+.row
+{
+  margin-top:1%;
+}
+
+.row1
+{
+  margin-top:6%;
+}
+
+.od{
+  background-color: #99CCEB;
+}
+
+.evn{
+  background-color: #306f8f ;
+}
+
+
+tr{
+  padding: 0.5rem;
+}
+
+
+td{
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+th{
+  text-align: center;
+  padding: 0.5rem;
+}
+
+thead th {
+  font-size: 1em;
+  padding: 1px !important;
+  height: 45px;
+  text-align: center;
+}
+
+.minibox{
+  height:26px;
+  width:26px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+
+.fav{
+  width:100%;
+  height:80%;
+  background-color:	khaki;
+  box-shadow:0px 0px 0px 0px white;
+  margin-left:0%;
+  border-radius: 3px;
+}
+
+.err{
+  color: #cca222;
+  padding-top:1%;
+  float:left;
+  margin-left: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .fav{
+    width:118%;
+    height:60%;
+    background-color:	khaki;
+    box-shadow:0px 0px 0px 0px white;
+    margin-left: -9%;
+    border-radius: 3px;
+    margin-top: 35%;
+  }
+
+  .row1
+{
+  margin-top:16%;
+}
+
+.fnt{
+  font-size: 0.8rem;
+}
+}

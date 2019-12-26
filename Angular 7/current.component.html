@@ -1,0 +1,136 @@
+<div class="row justify-content-center" *ngIf ="currentData">
+      <div class="col-md-9 col-xs-12 center-block">
+          <div class="row justify-content-center ">
+                  <div class="currentContainer">
+                      <div class="row " >
+                          <div class="col-7 ">
+                                            <div class="row">
+
+                                              <div class="col-12 city" *ngIf="tabCity!=''">
+                                                <span>{{tabCity}}</span>
+                                              </div>
+                                            </div>
+
+                                            <div class="row" *ngIf="currentData.timezone">
+                                                <div class="col-12 tzone">
+                                                    <span  >{{timezone}}</span>
+                                                  </div>
+                                            </div>
+
+                                            <div class="row" *ngIf="currentData.currently.temperature!=0">
+                                                <div class="col-12 temp">
+                                                  <div >
+
+                                                    <div  style="float: left; " class="one">
+                                                        {{temperature}}
+                                                    </div>
+                                                    <div style="float: left; margin-left:0%">
+                                                        <img class="deg two" src="https://cdn3.iconfinder.com/data/icons/virtual-notebook/16/button_shape_oval-512.png">
+                                                    </div>
+                                                    <div  style="float: left; margin-left:0%" class="three">
+                                                        &nbsp;F
+                                                    </div>
+
+
+                                                  </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="row" *ngIf="currentData.currently.summary!=''">
+                                                <div class="col-12 summ">
+                                                    <span>{{summary}}</span>
+                                                </div>
+                                            </div>
+
+                            </div>
+                            <div class="col-5 " *ngIf="seal.seal"><img class="sl" src="{{seal.seal}}" alt="Failed to load State seal" ></div>
+
+                        </div>
+
+                      <div class="row vals sm" >
+                                  <div class="col-2" *ngIf="humidity!=0">
+                                      <div class="row">
+                                        <div class="col-12">
+                                            <span data-toggle="tooltip" data-placement="top" title="Humidity">
+                                              <img src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-16-512.png" class="hmd" >
+                                            </span>
+                                        </div>
+                                        <div class="col-12" style="text-align: center;">
+                                            <span>{{humidity}}</span>
+                                        </div>
+
+                                      </div>
+
+                                  </div>
+
+                                  <div class="col-2" style="float:left;" *ngIf="pressure!=0">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <span data-toggle="tooltip" data-placement="top" title="Pressure">
+                                                <img src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-25-512.png" class="prs">
+                                              </span>
+                                        </div>
+                                          <div class="col-12">
+                                              <span style=" text-align:center;">{{pressure}}</span>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-2" style="float:left;text-align:center;" *ngIf="windSpeed!=0">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <span data-toggle="tooltip" data-placement="top" title="WindSpeed">
+                                                <img src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-27-512.png" class="ws">
+                                              </span>
+                                          </div>
+                                          <div class="col-12">
+                                              <span style=" text-align:center;" >{{windSpeed}}</span>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-2" style="float:left;" *ngIf="visibility!=0">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <span data-toggle="tooltip" data-placement="top" title="Visibility">
+                                                <img src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-30-512.png" class="vs" >
+                                              </span>
+                                          </div>
+                                          <div class="col-12">
+                                              <span style=" text-align:center;">{{visibility}}</span>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-2" style="float:left;" *ngIf="cloudCover!=0">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <span data-toggle="tooltip" data-placement="top" title="CloudCover">
+                                                <img src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-28-512.png"class="cc">
+                                              </span>
+                                          </div>
+                                          <div class="col-12">
+                                              <span style=" text-align:center;">{{cloudCover}}</span>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-2" style="float:left;" *ngIf="ozone!=0">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <span data-toggle="tooltip" data-placement="top" title="Ozone">
+                                                <img src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-24-512.png" class="oz">
+                                              </span>
+                                          </div>
+                                          <div class="col-12">
+                                              <span style=" text-align:center;">{{ozone}}</span>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                      </div>
+                  </div>
+          </div>
+      </div>
+    </div>

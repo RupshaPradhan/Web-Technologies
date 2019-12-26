@@ -1,0 +1,50 @@
+.container{
+  width:inherit;
+  margin-top: 4%;
+}
+
+.row{
+  width:inherit;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.rightGroup{
+  float:left;
+  margin-left: 70%;
+
+}
+
+
+.twImage{
+  width:41px;
+  height:41px;
+}
+
+
+.minibox{
+  height:26px;
+  width:26px;
+  background-color: white;
+  border-radius: 3px;
+  padding-top:31%;
+  padding-left: 31%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .minibox{
+    height:26px;
+    width:26px;
+    background-color: white;
+    border-radius: 3px;
+    padding-top:31%;
+    padding-left: 31%;
+  }
+
+  .twImage{
+    width: 33px;
+    height: 33px;
+    margin-top: 23%;
+  }
+}

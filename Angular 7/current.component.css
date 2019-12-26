@@ -1,0 +1,240 @@
+.container{
+  width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.one{
+  font-size:3rem;
+
+}
+
+.two{
+      margin-top: 78%;
+}
+
+.three{
+  font-size: 3rem;
+}
+
+.center-block{
+  background-color:white;
+  margin-top:2%;
+  padding-top:2%;
+}
+
+.currentContainer{
+  background-color:#99CCEB;
+  margin-top:1%;
+  padding-top:5%;
+  color:black;
+  border-radius:5px;
+  border-color: black ;
+  border-style: solid;
+  width:88%;
+}
+
+.sm{
+  width:100%;
+  margin-left:0%;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.sl{
+  width:71%;
+  padding-top: 14%;
+}
+
+.city{
+  float:left;
+  padding-left: 15%;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.tzone{
+  color:#013228;
+  float:left;
+  padding-left: 15%;
+  padding-top:2%;
+  font-size:2rem;
+  font-weight: 500;
+}
+
+.temp{
+  float:left;
+  padding-left: 15%;
+  padding-top:2.4%;
+  font-weight: 500;
+}
+
+.summ{
+  float:left;
+  padding-left: 15%;
+  padding-top:4%;
+  font-size: 1.4rem;
+  font-weight: 470;
+}
+
+
+.deg{
+  float:left;
+  width:19px;
+  padding-left:0px;
+  padding-right:5px;
+  margin-right:0px;
+}
+
+
+.vals{
+  padding-top:4.4%;
+  padding-bottom: 3.7%;
+}
+
+.hmd {
+  height:35px;
+  width:35px;
+}
+
+.prs {
+  height:35px;
+  width:35px;
+}
+
+.ws {
+  height:35px;
+  width:35px;
+}
+
+.vs {
+  height:35px;
+  width:35px;
+}
+
+.cc {
+  height:35px;
+  width:35px;
+}
+
+.oz {
+  height:35px;
+  width:35px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .one{
+    font-size:1.7rem;
+
+  }
+
+  .two{
+        margin-top: 20%;
+  }
+
+  .three{
+    font-size: 1.7rem;
+  }
+  .sm{
+    width:100%;
+    margin-left:0%;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .vals{
+    padding-top:3%;
+    padding-bottom: 2.5%;
+  }
+
+  .currentContainer{
+    background-color:#99CCEB;
+    margin-top:1%;
+    padding-top:3%;
+    color:black;
+    border-radius:5px;
+    border-color: black ;
+    border-style: solid;
+    width:100%;
+    height:80%
+  }
+
+
+
+  .city {
+    float: left;
+    padding-left: 16%;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .tzone {
+    color: #013228;
+    float: left;
+    padding-left: 16%;
+    padding-top: 2%;
+    font-size: 18px;
+  }
+
+  .temp{
+    float: left;
+    padding-left: 16%;
+    padding-top: 5%;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .summ{
+    float: left;
+    padding-left: 16%;
+    padding-top: 0%;
+    font-size: 19px;
+    font-weight: 480;
+  }
+
+  .sl{
+    width:65%;
+    padding-top: 35%;
+  }
+
+  .hmd {
+      height:17px;
+      width:17px;
+  }
+
+  .prs {
+    height:17px;
+    width:17px;
+  }
+
+  .ws {
+    height:17px;
+    width:17px;
+  }
+
+  .vs {
+    height:17px;
+    width:17px;
+  }
+
+  .cc {
+    height:17px;
+    width:17px;
+  }
+
+  .oz {
+    height:17px;
+    width:17px;
+  }
+
+  .deg{
+    float:left;
+    width:18px;
+    padding-right:7px;
+  }
+}
+
+

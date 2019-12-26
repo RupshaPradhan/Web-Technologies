@@ -1,0 +1,43 @@
+<div class="row" *ngIf = "tabData" style="margin-bottom: 10%;" >
+    <div class="col-md-12 col-sm-6 col-xs-6"  >
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a style="color:black;" class = "nav-link" [ngClass]="{'active': selectedTab==='current'}"  (click) = "onTabSelection('current')" href="#" #current>Current</a>
+        </li>
+        <li class="nav-item">
+            <a style="color:black;" class = "nav-link"  [ngClass]="{'active': selectedTab==='hourly'}"  (click) = "onTabSelection('hourly')" href="#" #current>Hourly</a>
+
+        </li>
+        <li class="nav-item">
+            <a style="color:black;" class = "nav-link"  [ngClass]="{'active': selectedTab==='weekly'}"  (click) = "onTabSelection('weekly')" href="#" #current>Weekly</a>
+        </li>
+
+        <li class="nav-item" style="margin-left: auto;">
+            <a [attr.href]="tweetMessage" class="inline_block twitter-share-button" target="_blank">
+                <img class="img-responsive center-block voc_list_preview_img twImage "
+                src="http://csci571.com/hw/hw8/Images/Twitter.png" alt="Home" >
+            </a>
+        </li>
+        <li class="nav-item st" *ngIf="addToFavoritesOption" >
+            <div class="minibox center-block">
+              <i class="material-icons " style="cursor: pointer;" (click)="favorites()" >star_border </i>
+            </div>
+        </li>
+
+        <li class="nav-item st" *ngIf="!addToFavoritesOption" >
+            <div class="minibox center-block">
+                <i class="material-icons" style="color:#ffae42;cursor: pointer;" (click)="favorites()"> star </i>
+            </div>
+        </li>
+
+    </ul>
+
+    <app-current *ngIf="selectedTab =='current'" [currentData]="tabData" [tabCity]="tabCity" [seal]="seal" class="justify-content-center"></app-current>
+    <app-hourly *ngIf="selectedTab =='hourly'" [chartData]='tabData' ></app-hourly>
+    <app-weekly *ngIf="selectedTab =='weekly'" [chartData]='tabData' [tabCity]="tabCity"></app-weekly>
+
+    </div>
+  </div>
+
+
+

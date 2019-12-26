@@ -1,0 +1,42 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="row1">
+  <!-- <div class='col-12'> -->
+    <div *ngIf = "tableData.length==0" class="center-block row fav">
+        <span class="err" style="font-weight:500;">No records</span>
+    </div>
+
+  <table class="table"  *ngIf = "tableData.length!=0">
+    <thead>
+      <tr style='background-color : #306f8f;'>
+        <th scope="col">#</th>
+        <th scope="col">Image</th>
+        <th scope="col">City</th>
+        <th scope="col">State</th>
+        <th scope="col">Favorites</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let data of tableData;let i = index" >
+      <tr [ngClass]="{'evn': ((i+1)%2==0),'od':((i+1)%2!=0)}">
+        <td>{{i+1}}</td>
+        <td><img src="{{data['image']['seal']}}" height=30px; width=30px;></td>
+        <td><a class="fnt" (click)="SearchForFavoriteCity(data['city'],data['state'])" data-toggle="tooltip" data-placement="top" title="{{data['city']}}" style="color:#1919FF;cursor: pointer;">{{data['city']}}</a></td>
+        <td class="fnt">{{data['state']}}</td>
+        <td>
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-xs-12 center-block">
+                    <div class="row justify-content-center ">
+                        <a (click)="removeselectedFavorite(data['city'],data['state'])">
+                            <div class="minibox center-block">
+                                <i class="material-icons " style="color:#ffae42;cursor: pointer;">delete</i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+  <!-- </div> -->
+</div>

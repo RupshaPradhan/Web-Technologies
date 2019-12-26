@@ -1,0 +1,15 @@
+
+<div class="row">
+  <div class="col-12">
+          <form [formGroup]="registrationForm" style="padding-top:4%">
+              <select class="custom-select optStyle" (change)="changeSelection($event)" formControlName="selected" >
+                  <option value=""  selected>Temperature</option>
+                  <option *ngFor="let option of selectionOptions" [ngValue]="option">{{option}}</option>
+               </select>
+          </form>
+  </div>
+  <!-- <div class="col-12 "> -->
+      <canvas id="myChart"></canvas>
+  <!-- </div> -->
+
+</div>

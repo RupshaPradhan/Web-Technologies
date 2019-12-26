@@ -1,0 +1,78 @@
+<div class="row">
+    <div class="col-12">
+          <div id="myWeeklyChart" style=" width: 100%;"></div>
+<div >
+    <div class="modal fade" style="display: block; background: rgba(20,20,20,0.5); pointer-events: none;" tabindex="-1" role="dialog"  aria-hidden="true" [ngClass]="[popUpFlag? 'show' : 'hide']">
+
+    <div class="modal-dialog" role="document">
+      <div class="modal-content " [ngClass]="[popUpFlag? 'widthDef' : 'widthClosed']">
+        <div class="modal-header">
+          <h5 class="modal-title" >{{weeklyDate}}</h5>
+          <button type="button" (click) = "closePopUp($event)" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="row row1">
+                        <div class="col-6 lft">
+                            <div class="weeklyTopPaddingCity"><span>{{weeklyCity}}</span></div>
+                            <div class="row weeklyTopPaddingTemp">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 temp">
+                                            <div >
+
+                                              <div  style="float: left; ">
+                                                 {{weeklyTemp}}
+                                              </div>
+                                              <div style="float: left; margin-left:0%">
+                                                  <img class="deg" src="https://cdn3.iconfinder.com/data/icons/virtual-notebook/16/button_shape_oval-512.png">
+                                              </div>
+                                              <div  style="float: left; margin-left:0%">
+                                                 &nbsp;F
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weeklyTopPaddingSumm"><span>{{weeklySummary}}</span></div>
+                        </div>
+
+                        <div class="col-6">
+                          <img class="imgWeekly" src="{{displayImage}}"  >
+                        </div>
+
+                    </div>
+                </div>
+              </div>
+
+        <div class="form-group col-12 ">
+            <hr>
+        </div>
+        <div class="row lftBtm">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-6 col-xs-0">
+                    </div>
+
+                    <div class="col-md-6 col-xs-6">
+
+                        <div><span>Precipitation : {{precipIntensity}}</span></div>
+                        <div><span>Chance of Rain : {{precipProbability}}</span></div>
+                        <div><span>Wind Speed : {{windSpeed}}</span></div>
+                        <div><span>Humidity : {{humidity}}</span></div>
+                        <div><span>Visibility : {{visibility}}</span></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
