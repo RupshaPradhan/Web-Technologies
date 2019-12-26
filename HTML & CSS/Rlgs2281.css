@@ -1,0 +1,419 @@
+body, html{
+    background-color: white;
+  }
+
+
+.level1{
+        position:fixed;
+        background-color:white;
+        text-align:left;
+        height:65px;
+        top:0px;
+        left:0px;
+        width:755px;
+        z-index: 6;
+
+    }
+
+.tab1{
+        position:fixed;
+        left:100px;
+        top:27px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 17px;
+        color: 	#4B0082;
+     }
+
+.tab2{
+        position:fixed;
+        left:380px;
+        top:27px;
+        color: 	#4B0082;
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+
+.tab3{
+    position:fixed;
+        left:430px;
+        top:27px;
+        color: 	#D3D3D3;
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+
+.tab4{
+    position:fixed;
+        left:510px;
+        top:27px;
+        color: 	#D3D3D3;
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+.tab5{
+    position:fixed;
+        left:580px;
+        top:27px;
+        color: 	#D3D3D3;
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif;
+     }  
+     
+.rectangle {
+    position: relative; 
+    width: 340px; 
+    height:190px;
+    left: 370px;
+    right: 250px;
+    top: -456px;  
+    background: white; 
+    color: #531953;
+}
+
+#image1{
+    position: absolute; 
+    padding: 24px 27px 24px 25px;
+    width:108px;
+    height:145px;
+}
+
+#part1{
+    position: relative; 
+    top:24px;
+    left:150px;
+    font-style: italic;
+    font-family:serif;
+    font-size: 12px;
+    color:#4B0082;
+}
+
+#part2{
+    position: relative; 
+    top:28px;
+    left:150px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    color:#4B0082;
+}
+
+#part3{
+    position: relative; 
+    top:25px;
+    left:150px;
+    font-style: bold; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color:#4B0082;
+}
+
+#line{
+    position: relative; 
+    top:-25px;
+    left:2px;
+    font-style: bold;
+    color:#4B0082;
+}
+
+#part4{
+    position: relative; 
+    top:25px;
+    left:150px;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#4B0082;
+}
+
+
+.pimg1, .pimg2{
+    position:relative;
+    background-position:center;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  
+  .pimg1{
+    position:relative;
+    left:0 px;
+    margin:0px;
+
+    padding:0px;
+    background-image:url('http://csci571.com/hw/hw3/images/coffee2.jpg');
+    height:750px;
+    width:1500px;
+  }
+  
+
+
+  .pimg2{   
+    background-image:url('http://csci571.com/hw/hw3/images/coffee1.jpg');
+    top:300px;
+    height:700px;
+    width:1500px;
+  }
+
+.column1, .column2, .column3{
+    position: relative;
+     left:-3.5px;
+    top:100px;
+    float: left;
+    width: 250px;
+    height: 500px;
+    color: white;
+  }
+
+.column1{
+    background-color: #3498DB;
+}
+
+.column2{
+    background-color: #552586;
+}
+
+.column3{
+    background-color: #9969C7;
+}
+
+.top{
+    position: relative; 
+    top:221px;
+    left:40px;
+    font-family:Arial, sans-serif;
+    font-size: 12px;
+}
+.middle{
+    position: relative; 
+    top:225px;
+    left:40px;
+    font-style: bold;
+    font-family:Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.last1{
+    position: relative; 
+    top:205px;
+    left:152px;
+    font-style: bold;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.last2{
+    position: relative; 
+    top:205px;
+    left:154px;
+    font-style: bold;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.last3{
+    position: relative; 
+    top:205px;
+    left:165px;
+    font-style: bold;
+    font-size: 18px;
+    font-weight: 900;
+}
+  
+
+
+
+  .section1{
+    background-color:#552586;
+    color:white;
+    text-align:left;
+    height:400px;
+    width:1000px;
+    
+  }
+
+  .section2{
+    background-color:white;
+    text-align:left;
+    height:100px;
+    
+  }
+
+  .heading1{
+     position: relative;
+     top:120px ;
+     left: 189px;   
+     font-family:Arial, sans-serif;
+     font-size: 14px; 
+     
+  }
+  
+
+  .content1{
+     position: relative;
+     top:115px ;
+     left: 193px;
+     font-family:Arial, sans-serif;
+     font-size: 25px;  
+     font-style: bold;
+      
+  }
+
+ 
+  .heading2{
+    position: relative;
+    top:100px;
+    left:130px;
+    color:#552586;
+    font-size: 14px;
+    font-style: bold; 
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.heading3{
+    position: relative;
+    top:110px;
+    left:136px;
+    color:#552586;
+    font-size: 24px;
+    font-weight: 150;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.content2{
+    position: relative;
+    top:110px;
+    left: 136px;
+    color: #552586;
+    font-size: 12px;
+    font-family: 'Ariel', Helvetica, sans-serif;
+}
+
+.columnLast1, .columnLast2{
+    float: left;
+    width: 300px;
+    height: 450px;
+    background-color: white;
+
+  }
+
+.name, .email,.phone, .message{
+    position: relative;
+    top:130px;
+    left:150px;
+    width:277px;
+    height:15px;
+    font-size: 10px;
+    border:1px solid #552586;
+    color:#552586;
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+}
+
+.email{
+    top:135px;
+}
+
+.phone{
+    top:140px;
+}
+
+.message{
+    top:145px;
+    height:95px;
+}
+
+.txt1, .txt2,.txt3,.txt4,.txt5{
+    position:relative;
+    color:#552586;
+    font-family: Trebuchet MS, Helvetica, serif;
+    font-size: 10px;
+    top:1.5px;
+    left:4px;
+    
+}
+
+.txt5{
+    position:relative;
+    top:6px;
+    color:white;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    left: 19px;
+}
+
+.submit{
+    position: relative;
+    top:149px;
+    left:345px;
+    width:85px;
+    height:30px;
+    background-color:#552586;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.parallax {
+    perspective: 1px;
+    height: 700px;
+    width: 750px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  * {
+    margin:0;
+    padding:0;
+  }
+
+ 
+#group1 {
+    z-index: 1;
+    position:relative;
+    top:-150px;
+    left:-170px;
+    height:750px;
+    width:1500px;
+}
+
+
+#group3 {
+    z-index: 1;
+    height:750px;
+    width:1500px;
+}
+
+#group4 {
+    z-index: 2;
+}
+#group5 {
+    z-index: 3;
+    position: absolute; 
+    top:2570px;
+    width: 1000px;
+    height: 500px;
+}
+
+  .parallax__group {
+    position: relative;
+    height: 700px;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer--base {
+    transform: translateZ(-1px) scale(2);
+    z-index: 20;
+  }
+  .parallax__layer--back {
+    transform: translateZ(-3px) scale(3);
+    z-index: 10;
+    
+  }
